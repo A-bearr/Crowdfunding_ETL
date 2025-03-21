@@ -20,10 +20,10 @@ Renz Supnet
 1. Extract Data
     Load the crowdfunding.xlsx and contacts.xlsx files into Pandas DataFrames.
 2. Transform Data
-   a. Create the Category and Subcategory DataFrames
-    Extract and transform the category & sub-category column.
-    Generate unique category and subcategory IDs.
-    Export the transformed data as category.csv and subcategory.csv.
+- Create the Category and Subcategory DataFrames
+- Extract and transform the category & sub-category column.
+- Generate unique category and subcategory IDs.
+- Export the transformed data as category.csv and subcategory.csv.
    b. Create the Campaign DataFrame
     Extract relevant columns from crowdfunding.xlsx.
     Convert columns (goal, pledged, launch_date, end_date) to appropriate data types.
