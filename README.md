@@ -47,6 +47,12 @@ Renz Supnet
 - Import CSV files into corresponding tables.
 - Run SELECT statements to verify the data.
 
+# Usage Instructions
+- Make sure psql is installed
+- Open a terminal within the Resources directory
+- Login into your psql account using the command ```psql -U (username)```
+- Execute ```\i crowdfunding_db_schema.sql``` to run our sql code
+
 # Resources 
 - https://stackoverflow.com/questions/19231871/convert-unix-time-to-readable-date-in-pandas-dataframe (Converting unix time to readable date in pandas)
 - https://stackoverflow.com/questions/13411544/delete-a-column-from-a-pandas-dataframe (Delete a column from a pandas dataframe)
