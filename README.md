@@ -20,21 +20,22 @@ Renz Supnet
 1. Extract Data
     Load the crowdfunding.xlsx and contacts.xlsx files into Pandas DataFrames.
 2. Transform Data
-    a. Create the Category and Subcategory DataFrames
+   a. Create the Category and Subcategory DataFrames
     Extract and transform the category & sub-category column.
     Generate unique category and subcategory IDs.
     Export the transformed data as category.csv and subcategory.csv.
-    b. Create the Campaign DataFrame
+   b. Create the Campaign DataFrame
     Extract relevant columns from crowdfunding.xlsx.
     Convert columns (goal, pledged, launch_date, end_date) to appropriate data types.
     Merge with category and subcategory DataFrames to assign IDs.
     Export as campaign.csv.
-    c. Create the Contacts DataFrame
+   c. Create the Contacts DataFrame
     Choose between dictionary methods or regular expressions to extract data.
     Split the name column into first_name and last_name.
     Convert contact_id to integer.
     Export as contacts.csv.
-3. Load Data into PostgreSQL
+   
+4. Load Data into PostgreSQL
     Design an ERD and create a database schema in crowdfunding_db_schema.sql.
     Set up a PostgreSQL database named crowdfunding_db.
     Create tables using the schema.
