@@ -30,19 +30,19 @@ Renz Supnet
 - Convert columns (goal, pledged, launch_date, end_date) to appropriate data types.
 - Merge with category and subcategory DataFrames to assign IDs.
 - Export as campaign.csv.
-
-   c. Create the Contacts DataFrame
-    Choose between dictionary methods or regular expressions to extract data.
-    Split the name column into first_name and last_name.
-    Convert contact_id to integer.
-    Export as contacts.csv.
+- 
+3. Create the Contacts DataFrame
+  - Choose between dictionary methods or regular expressions to extract data.
+  - Split the name column into first_name and last_name.
+  - Convert contact_id to integer.
+  - Export as contacts.csv.
    
 4. Load Data into PostgreSQL
-    Design an ERD and create a database schema in crowdfunding_db_schema.sql.
-    Set up a PostgreSQL database named crowdfunding_db.
-    Create tables using the schema.
-    Import CSV files into corresponding tables.
-    Run SELECT statements to verify the data.
+- Design an ERD and create a database schema in crowdfunding_db_schema.sql.
+- Set up a PostgreSQL database named crowdfunding_db.
+- Create tables using the schema.
+- Import CSV files into corresponding tables.
+- Run SELECT statements to verify the data.
 
 # Resources 
 - https://stackoverflow.com/questions/19231871/convert-unix-time-to-readable-date-in-pandas-dataframe (Converting unix time to readable date in pandas)
