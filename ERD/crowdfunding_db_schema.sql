@@ -1,3 +1,11 @@
+DROP DATABASE IF EXISTS crowdfunding_db ;
+CREATE DATABASE crowdfunding_db;
+\c crowdfunding_db
+DROP TABLE IF EXISTS campaign;
+DROP TABLE IF EXISTS category;
+DROP TABLE IF EXISTS subcategory;
+DROP TABLE IF EXISTS contacts;
+
 CREATE TABLE "campaign" (
     "cf_id" INT   NOT NULL,
     "contact_id" INT   NOT NULL,
@@ -53,7 +61,18 @@ REFERENCES "category" ("category_id");
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
 
-SELECT * FROM campaign;
-SELECT * FROM category;
-SELECT * FROM subcategory;
-SELECT * FROM contacts;
+\copy category from '../Resources/category.csv' WITH DELIMITER ',' CSV HEADER;
+
+SELECT * FROM category LIMIT 5;
+
+\copy subcategory from '../Resources/subcategory.csv' WITH DELIMITER ',' CSV HEADER;
+
+SELECT * FROM subcategory LIMIT 5;
+
+\copy contacts from '../Resources/contacts.csv' WITH DELIMITER ',' CSV HEADER;
+
+SELECT * FROM contacts LIMIT 5;
+
+\copy campaign from '../Resources/campaign.csv' WITH DELIMITER ',' CSV HEADER;
+
+SELECT * FROM campaign LIMIT 5;
