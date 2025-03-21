@@ -13,7 +13,6 @@ Renz Supnet
 1. ERD folder with ERD diagram, QUickDBD diagram, and .sql file.
 2. Resource folder with given Excel files and created CSV files
 3. Jupyter Notebook file
-# Resources 
 
 # Resources 
 - https://stackoverflow.com/questions/19231871/convert-unix-time-to-readable-date-in-pandas-dataframe (Converting unix time to readable date in pandas)
