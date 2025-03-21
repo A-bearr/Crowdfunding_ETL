@@ -9,6 +9,9 @@ Alyssa Berridge,
 Esteban Ortega, 
 Renz Supnet
 
+#Notes
+- When importing the data to the tables, please import the category, contacts, subcategory csvs first, before importing the campaign csv.
+
 # Content breakdown for this repository
 1. ERD folder with ERD diagram, QUickDBD diagram, and .sql file.
 2. Resource folder with given Excel files and created CSV files
